@@ -1,0 +1,147 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tagline styles */
+.tagline {
+    background-color: #003366; /* Dark blue */
+    color: #CCFFFF; /* Light cyan */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6699CC; /* Medium blue */
+    padding: 15px 30px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left .logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.nav-left .urbankart-text {
+    color: #CCFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.search-container {
+    position: relative;
+    width: 400px; /* Increased width of the search container */
+}
+
+.nav-left .search-bar {
+    width: 100%; /* Ensures the search bar takes full width of the container */
+    padding: 12px; /* Increased padding inside the search bar */
+    font-size: 1.1rem; /* Increased font size */
+    border: none;
+    border-radius: 5px;
+    padding-left: 40px; /* Space for the search icon */
+    height: 40px; /* Increased height for better input area */
+}
+
+.nav-left .search-icon {
+    position: absolute;
+    left: 10px; /* Align icon inside the search bar */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Increased search icon size */
+    height: 20px; /* Increased search icon size */
+    pointer-events: none; /* Makes the icon non-clickable */
+}
+
+/* Center part of navbar (making links equidistant) */
+.nav-center {
+    display: flex;
+    justify-content: space-evenly; /* Equidistant items */
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-center .home,
+.nav-center .categories,
+.nav-center .cart,
+.nav-center .account {
+    color: #CCFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-center .categories {
+    position: relative;
+}
+
+.nav-center .categories-btn {
+    background-color: #336699;
+    color: #CCFFFF;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav-center .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #99CCFF;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav-center .categories:hover .dropdown-content {
+    display: block;
+}
+
+.nav-center .dropdown-content a {
+    color: #003366;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-center .dropdown-content a:hover {
+    background-color: #336699;
+}
+
+/* Cart and profile icon styling */
+.nav-center .cart {
+    display: flex;
+    align-items: center;
+}
+
+.nav-center .cart-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.nav-center .account {
+    display: flex;
+    align-items: center;
+}
+
+.nav-center .profile-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
