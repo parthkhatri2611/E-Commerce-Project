@@ -44,6 +44,7 @@
     margin-right: 20px;
 }
 
+/* Search container */
 .search-container {
     position: relative;
     width: 400px; /* Increased width of the search container */
@@ -69,12 +70,13 @@
     pointer-events: none; /* Makes the icon non-clickable */
 }
 
-/* Center part of navbar (making links equidistant) */
+/* Center part of navbar */
 .nav-center {
     display: flex;
-    justify-content: space-evenly; /* Equidistant items */
+    justify-content: flex-end; /* Shift all items to the right */
     align-items: center;
     flex-grow: 1;
+    gap: 30px; /* Add spacing between options */
 }
 
 .nav-center .home,
@@ -84,56 +86,111 @@
     color: #CCFFFF;
     text-decoration: none;
     font-size: 1rem;
-}
-
-.nav-center .categories {
+    font-weight: 500;
     position: relative;
-}
-
-.nav-center .categories-btn {
-    background-color: #336699;
-    color: #CCFFFF;
-    border: none;
-    padding: 10px;
-    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth animations */
     cursor: pointer;
 }
 
-.nav-center .dropdown-content {
-    display: none;
+/* Hover effects for navigation links */
+.nav-center a:hover {
+    color: #003366; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+/* Hover underline animation */
+.nav-center a::after {
+    content: '';
     position: absolute;
-    background-color: #99CCFF;
+    width: 0; /* Start with no underline */
+    height: 2px;
+    background-color: #003366; /* Underline color */
+    bottom: -5px; /* Slightly below the text */
+    left: 0;
+    transition: width 0.3s ease; /* Smooth underline animation */
+}
+
+.nav-center a:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+/* Categories dropdown with arrow */
+.nav-center .categories {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between text and arrow */
+}
+
+.nav-center .categories .arrow {
+    font-size: 0.8rem;
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth rotation animation */
+}
+
+.nav-center .categories:hover .arrow {
+    transform: rotate(180deg); /* Rotate arrow to point up */
+}
+
+/* Dropdown menu */
+.nav-center .dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #99CCFF; /* Light blue background */
     min-width: 160px;
     z-index: 1;
+    top: 100%; /* Positions the dropdown directly below the navbar */
+    left: 0; /* Aligns it with the parent element */
+    margin-top: 5px; /* Adds slight spacing below the navbar */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden; /* Prevents content overflow */
 }
 
 .nav-center .categories:hover .dropdown-content {
-    display: block;
-}
+    display: block; /* Make it visible */
+    animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
+}   
 
 .nav-center .dropdown-content a {
     color: #003366;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
 .nav-center .dropdown-content a:hover {
-    background-color: #336699;
+    background-color: #336699; /* Slightly darker blue on hover */
+    color: #CCFFFF; /* Light cyan text on hover */
 }
 
 /* Cart and profile icon styling */
 .nav-center .cart {
     display: flex;
     align-items: center;
+    color: #CCFFFF; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
 .nav-center .cart-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+    width: 20px; /* Default size */
+    height: 20px; /* Default size */
+    margin-right: 5px; /* Space between icon and text */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth icon effect */
 }
+
+.nav-center .cart:hover {
+    color: #003366; /* Dark blue on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+.nav-center .cart:hover .cart-icon {
+    transform: rotate(10deg) scale(1.2); /* Rotate and enlarge icon */
+    filter: brightness(1.2); /* Slightly brighten the icon */
+}
+
 
 .nav-center .account {
     display: flex;
@@ -144,4 +201,16 @@
     width: 20px;
     height: 20px;
     margin-right: 5px;
+}
+
+/* Fade-in animation for dropdown */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
