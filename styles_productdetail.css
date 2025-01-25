@@ -1,0 +1,421 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+/* Tagline styles */
+.tagline {
+    background-color: #003366; /* Dark blue */
+    color: #CCFFFF; /* Light cyan */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    letter-spacing: 1px;
+    font-weight: 600;
+}   
+/* Body & Font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    /* padding: 20px; */
+    color: #fff;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar{
+    box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.2);  
+}
+
+button{
+    border-radius: 40px;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); 
+}
+/* Product Detail Container */
+.product-detail-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Images */
+.product-images {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-images .main-product-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail-images img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Product Information */
+.product-info {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.product-info h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.product-description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.product-price span {
+    font-size: 1.5rem;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* Ratings */
+.product-rating span {
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+/* Specifications */
+.product-specifications h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product-specifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-specifications ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Pincode Section */
+.pincode-section {
+    margin-bottom: 15px;
+}
+
+.pincode-section input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.pincode-section button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.pincode-section button:hover {
+    background-color: #336699;
+}
+
+/* Quantity Section */
+.quantity-section {
+    margin-bottom: 15px;
+}
+
+.quantity-section input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+/* Action Buttons */
+.actions button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.actions button:hover {
+    background-color: #336699;
+}
+
+/* Availability & Shipping */
+.availability-shipping {
+    margin-top: 20px;
+}
+
+.availability-shipping span {
+    margin-right: 20px;
+    font-size: 1.1rem;
+}
+
+/* Related Products Section */
+.related-products {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.related-products h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.related-product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.related-product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.related-product p {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0 -4px 20px -2px rgba(0, 0, 0, 0.2); 
+}
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6699CC; /* Medium blue */
+    padding: 15px 30px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left .logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.nav-left .urbankart-text {
+    color: #CCFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+/* Search container */
+.search-container {
+    position: relative;
+    width: 400px; /* Increased width of the search container */
+}
+
+.nav-left .search-bar {
+    width: 100%; /* Ensures the search bar takes full width of the container */
+    padding: 12px; /* Increased padding inside the search bar */
+    font-size: 1.1rem; /* Increased font size */
+    border: none;
+    border-radius: 5px;
+    padding-left: 40px; /* Space for the search icon */
+    height: 40px; /* Increased height for better input area */
+}
+
+.nav-left .search-icon {
+    position: absolute;
+    left: 10px; /* Align icon inside the search bar */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Increased search icon size */
+    height: 20px; /* Increased search icon size */
+    pointer-events: none; /* Makes the icon non-clickable */
+}
+
+/* Center part of navbar */
+.nav-center {
+    display: flex;
+    justify-content: flex-end; /* Shift all items to the right */
+    align-items: center;
+    flex-grow: 1;
+    gap: 30px; /* Add spacing between options */
+}
+
+.nav-center .home,
+.nav-center .categories,
+.nav-center .cart,
+.nav-center .account {
+    color: #CCFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth animations */
+    cursor: pointer;
+}
+
+/* Hover effects for navigation links */
+.nav-center a:hover {
+    color: #003366; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+/* Hover underline animation */
+.nav-center a::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Start with no underline */
+    height: 2px;
+    background-color: #003366; /* Underline color */
+    bottom: -5px; /* Slightly below the text */
+    left: 0;
+    transition: width 0.3s ease; /* Smooth underline animation */
+}
+
+.nav-center a:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+/* Categories dropdown with arrow */
+.nav-center .categories {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between text and arrow */
+}
+
+.nav-center .categories .arrow {
+    font-size: 0.8rem;
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth rotation animation */
+}
+
+.nav-center .categories:hover .arrow {
+    transform: rotate(180deg); /* Rotate arrow to point up */
+}
+
+/* Dropdown menu */
+.nav-center .dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #99CCFF; /* Light blue background */
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; /* Positions the dropdown directly below the navbar */
+    left: 0; /* Aligns it with the parent element */
+    margin-top: 5px; /* Adds slight spacing below the navbar */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.nav-center .categories:hover .dropdown-content {
+    display: block; /* Make it visible */
+    animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
+}   
+
+.nav-center .dropdown-content a {
+    color: #003366;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.nav-center .dropdown-content a:hover {
+    background-color: #336699; /* Slightly darker blue on hover */
+    color: #CCFFFF; /* Light cyan text on hover */
+}
+
+/* Cart and profile icon styling */
+.nav-center .cart {
+    display: flex;
+    align-items: center;
+    color: #CCFFFF; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.nav-center .cart-icon {
+    width: 20px; /* Default size */
+    height: 20px; /* Default size */
+    margin-right: 5px; /* Space between icon and text */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth icon effect */
+}
+
+.nav-center .cart:hover {
+    color: #003366; /* Dark blue on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+.nav-center .cart:hover .cart-icon {
+    transform: rotate(10deg) scale(1.2); /* Rotate and enlarge icon */
+    filter: brightness(1.2); /* Slightly brighten the icon */
+}
+
+.nav-center .account {
+    display: flex;
+    align-items: center;
+}
+
+.nav-center .profile-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
