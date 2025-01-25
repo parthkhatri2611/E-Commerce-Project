@@ -17,6 +17,66 @@
     font-weight: 600;
 }
 
+/* Offer Section */
+.offer-section {
+    overflow: hidden;
+    background-color: #99CCFF;
+    padding: 20px 0;
+    position: relative;
+}
+
+.offer-slider {
+    display: flex;
+    animation: slide 20s linear infinite;
+    width: calc(100% * 4); /* Adjust based on the number of offers */
+}
+
+.offer {
+    flex: 0 0 25%; /* Each offer takes 25% of the slider */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for slider animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .offer img {
+        max-height: 150px;
+    }
+
+    .offer {
+        flex: 0 0 50%; /* Show fewer offers at a time on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .offer img {
+        max-height: 120px;
+    }
+
+    .offer {
+        flex: 0 0 100%; /* Show one offer at a time */
+    }
+}
+
 /* Navbar styling */
 .navbar {
     display: flex;
@@ -191,7 +251,6 @@
     filter: brightness(1.2); /* Slightly brighten the icon */
 }
 
-
 .nav-center .account {
     display: flex;
     align-items: center;
@@ -202,6 +261,60 @@
     height: 20px;
     margin-right: 5px;
 }
+.contact-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color:#003366;
+    margin-bottom: 0px;
+}
+
+.contact-column {
+    flex: 1 1 200px;
+    margin: 10px;
+    max-width: 250px;
+}
+
+.contact-column h3 {
+    color: white; /* Updated heading color */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #99CCFF;
+    padding-bottom: 5px;
+}
+
+
+.contact-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-column ul li {
+    margin-bottom: 10px;
+}
+
+.contact-column ul li a {
+    color: #CCFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contact-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: black; /* Updated footer strip color */
+    color: #CCFFFF;
+    text-align: center;
+    padding: 5px; /* Reduced padding for smaller footer */
+    font-size: 0.9rem;
+}
+
+
 
 /* Fade-in animation for dropdown */
 @keyframes fadeIn {
