@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenovo Products</title>
+    <title>Electronics - UrbanKart</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <header>
-        <div class="tagline">
-            UrbanKart: Your One-Stop Destination for All Things Branded!
-        </div>
         <nav class="navbar">
             <div class="nav-left">
                 <a href="#" class="logo">
                     <img src="logo.png" alt="UrbanKart Logo">
                 </a>
                 <a href="#" class="urbankart-text">UrbanKart</a>
+    
                 <div class="search-container">
                     <input type="text" class="search-bar" placeholder="Search for Products, Brands and More">
                     <img src="search-icon.png" alt="Search" class="search-icon">
                 </div>
             </div>
+    
             <div class="nav-center">
                 <a href="#" class="home">Home</a>
                 <div class="categories">
                     <a href="#" class="categories">
-                        Categories <span class="arrow">&#9660;</span>
+                        Categories <span class="arrow">&#9660;</span> <!-- Down arrow -->
                     </a>
                     <div class="dropdown-content">
                         <a href="#">Electronics</a>
@@ -45,35 +44,42 @@
         </nav>
     </header>
 
-    <div class="main-section">
-        <h1>Lenovo Laptops</h1>
+    <main>
+        <h1>Electronics</h1>
         <div class="product-grid">
+            <!-- Product 1: Samsung Galaxy S23 Ultra -->
             <div class="product-card">
-                <img src="https://example.com/lenovo-legion-5.jpg" alt="Lenovo Legion 5" class="product-image">
-                <h3>Lenovo Legion 5</h3>
-                <p>₹1,04,999</p>
-                <button><a href="/shopbybrand/lenovo/legion5.html" class="buy-now">Buy Now</a></button>
+                <img src="https://images.samsung.com/is/image/samsung/p6pim/in/2302/gallery/in-galaxy-s23-ultra-s918-sm-s918bzkhinu-thumb-534178648?$720_576_PNG$" alt="Samsung Galaxy S23 Ultra">
+                <h3>Samsung Galaxy S23 Ultra</h3>
+                <p>Price: ₹1,24,999</p>
+                <button class="buy-now"><a href="/shopbybrand/samsung/s23ultra.html">Buy Now</a></button>
                 <button class="add-to-cart">Add to Cart</button>
             </div>
+
+            <!-- Product 2: Samsung 43-inch Crystal 4K UHD TV -->
             <div class="product-card">
-                <img src="https://example.com/lenovo-ideapad-3.jpg" alt="Lenovo IdeaPad 3" class="product-image">
-                <h3>Lenovo IdeaPad 5</h3>
-                <p>₹39,999</p>
-                <button><a href="/shopbybrand/lenovo/ideapad5.html" class="buy-now">Buy Now</a></button>
+                <img src="https://images.samsung.com/is/image/samsung/p6pim/in/au7000-ua43au7000klxl/gallery/in-crystal-uhd-au7000-ua43au7000klxl-431162774?$720_576_PNG$" alt="Samsung 43-inch Crystal 4K UHD TV">
+                <h3>Samsung 43-inch Crystal 4K UHD TV</h3>
+                <p>Price: ₹39,990</p>
+                <button class="buy-now"><a href="/shopbybrand/samsung/tv.html">Buy Now</a></button>
                 <button class="add-to-cart">Add to Cart</button>
             </div>
+
+            <!-- Product 3: Samsung Galaxy Buds2 Pro -->
             <div class="product-card">
-                <img src="https://example.com/lenovo-thinkpad-x1.jpg" alt="Lenovo ThinkPad X1" class="product-image">
-                <h3>Lenovo Yoga 7i</h3>
-                <p>₹1,29,999</p>
-                <button><a href="/shopbybrand/lenovo/yoga7i.html" class="add-to-cart">Buy Now</a></button>
+                <img src="https://images.samsung.com/is/image/samsung/p6pim/in/2308/gallery/in-galaxy-buds2-pro-r510-sm-r510nlvainu-534482614?$720_576_PNG$" alt="Samsung Galaxy Buds2 Pro">
+                <h3>Samsung Galaxy Buds2 Pro</h3>
+                <p>Price: ₹17,999</p>
+                <button class="buy-now"><a href="/shopbybrand/samsung/buds2pro.html">Buy Now</a></button>
                 <button class="add-to-cart">Add to Cart</button>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2025 UrbanKart. All rights reserved.</p>
+        <div class="footer">
+            &copy; 2025 UrbanKart. All rights reserved.
+        </div>
     </footer>
 </body>
 </html>
