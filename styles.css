@@ -299,6 +299,9 @@ a{
     height: 20px;
     margin-right: 5px;
 }
+
+
+
 .contact-section {
     padding: 50px 20px;
     display: flex;
@@ -387,6 +390,8 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    max-width: 800px;
+    margin:0 auto;
 }
 
 .category-box {
@@ -451,11 +456,42 @@ a{
     margin-bottom: 20px;
 }
 
+.shop-by-brand button {
+    background-color: #003366;
+    padding: 15px;
+    border-radius: 40px;
+    border: 2px solid transparent; /* Initially no border */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.shop-by-brand button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #003366; /* Border appears on hover */
+}
+
+.shop-by-brand button:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0), transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
 .brands-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    max-width: 900px;
+    margin: 0px auto;
 }
 
 .brand-box {
@@ -490,7 +526,7 @@ a{
     background: radial-gradient(circle, rgba(0,0,0,0), transparent 70%);
     transform: translate(-50%, -50%);
     pointer-events: none;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ;
     opacity: 1;
 }
 
@@ -594,3 +630,6 @@ a{
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+

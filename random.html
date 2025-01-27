@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid Example</title>
+    <style>
+        /* Product Grid Container */
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping if items exceed the row */
+            justify-content: center; /* Center-aligns the products */
+            gap: 20px; /* Adds 20px gap between products */
+            margin: 20px auto; /* Adds spacing around the grid and centers it */
+            max-width: 1200px; /* Limits the width of the grid */
+        }
+
+        /* Individual Product Card */
+        .product-card {
+            flex: 1 1 calc(25% - 20px); /* 25% width minus the gap for 4 cards per row */
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+            background-color: #CCFFFF; /* Light blue background for the card */
+            border: 1px solid #6699CC; /* Border with medium blue */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center; /* Center-align content inside the card */
+            padding: 20px; /* Add padding inside the card */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px); /* Lifts the card slightly on hover */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+        }
+
+        /* Product Image */
+        .product-card img {
+            max-width: 100%; /* Ensures the image doesn’t overflow */
+            height: auto;
+            border-radius: 5px; /* Slightly rounded image */
+            margin-bottom: 10px; /* Spacing below the image */
+        }
+
+        /* Product Name */
+        .product-card h3 {
+            font-size: 1.2rem;
+            color: #003366; /* Dark blue text */
+            margin: 10px 0;
+        }
+
+        /* Product Price */
+        .product-card p {
+            font-size: 1rem;
+            color: #336699; /* Medium blue text */
+            margin-bottom: 15px;
+        }
+
+        /* Action Buttons */
+        .product-card button {
+            background-color: #003366; /* Dark blue button background */
+            color: #CCFFFF; /* Light text color */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #336699; /* Medium blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="product-grid">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>$100</p>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product 2">
+            <h3>Product Name 2</h3>
+            <p>$120</p>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product 3">
+            <h3>Product Name 3</h3>
+            <p>$90</p>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product 4">
+            <h3>Product Name 4</h3>
+            <p>$110</p>
+            <button>Buy Now</button>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
