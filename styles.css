@@ -68,7 +68,7 @@ a{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-40%); /* Move the entire content out of view */
+        transform: translateX(-30%); /* Move the entire content out of view */
     }
 }
 
