@@ -130,11 +130,13 @@ a{
     align-items: center;
     background-color: #6699CC; /* Medium blue */
     padding: 15px 30px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .nav-left {
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .nav-left .logo img {
@@ -154,6 +156,7 @@ a{
 .search-container {
     position: relative;
     width: 400px; /* Increased width of the search container */
+    margin-left: 20px;
 }
 
 .nav-left .search-bar {
@@ -183,8 +186,10 @@ a{
     align-items: center;
     flex-grow: 1;
     gap: 30px; /* Add spacing between options */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
+/* Styling for links and icons */
 .nav-center .home,
 .nav-center .categories,
 .nav-center .cart,
@@ -308,6 +313,111 @@ a{
     margin-right: 5px;
 }
 
+/* Responsive Design for Navbar */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .search-container {
+        width: 300px; /* Adjust search width */
+    }
+
+    .nav-center {
+        gap: 20px; /* Reduce space between items */
+    }
+
+    .nav-center .categories {
+        display: block; /* Ensure categories are still shown */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px; /* Reduced padding for smaller screens */
+    }
+
+    .nav-left .urbankart-text {
+        font-size: 1rem; /* Smaller text for mobile */
+        margin-right: 10px; /* Adjust margin */
+    }
+
+    .nav-left .search-bar {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .nav-center {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; /* Full width */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-center .home,
+    .nav-center .categories,
+    .nav-center .cart,
+    .nav-center .account {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+
+    .nav-center .cart-icon,
+    .nav-center .profile-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Add hamburger menu for small screens */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #CCFFFF;
+    }
+
+    .hamburger-menu.active + .nav-center {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px; /* Further reduce padding */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left .logo img {
+        height: 40px; /* Smaller logo */
+    }
+
+    .search-container {
+        width: 80%; /* Wider search bar */
+        margin: 10px 0;
+    }
+
+    .nav-center {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-center .home,
+    .nav-center .categories,
+    .nav-center .cart,
+    .nav-center .account {
+        font-size: 0.85rem; /* Smaller text */
+    }
+
+    .nav-center .cart-icon,
+    .nav-center .profile-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
 
 
 .contact-section {
