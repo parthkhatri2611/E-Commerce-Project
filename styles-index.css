@@ -1,4 +1,3 @@
-/* Reset default margins and padding */
 * {
     margin: 0;
     padding: 0;
@@ -16,14 +15,13 @@ a{
 }
 
 
-/* Tagline styles */
 .tagline {
-    background-color: #003366; /* Dark blue */
-    color: #CCFFFF; /* Light cyan */
+    background-color: #003366; 
+    color: #CCFFFF;
     text-align: center;
     padding: 10px 0;
     font-size: 1.4rem;
-    font-family: 'Poppins', sans-serif; /* Modern font */
+    font-family: 'Poppins', sans-serif; 
     letter-spacing: 1px;
     font-weight: 600;
     position: sticky;
@@ -32,11 +30,10 @@ a{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.486); 
 }
 
-/* Offer Section Styles */
 .offer-section {
     position: relative;
     overflow: hidden;
-    background-color: #99CCFF; /* Background color */
+    background-color: #99CCFF; 
     padding: 20px 0;
     width: 100%;
     display: flex;
@@ -44,40 +41,36 @@ a{
     align-items: center;
 }
 
-/* Slider container */
 .offer-slider {
     display: flex;
-    width: max-content; /* Ensure the slider's total width fits all items */
-    animation: slide 15s linear infinite; /* Smooth sliding animation */
+    width: max-content;
+    animation: slide 15s linear infinite; 
 }
 
-/* Offer boxes */
 .offer {
-    height: 200px; /* Fixed height for the image */
-    width: auto; /* Auto-adjust width to maintain aspect ratio */
-    object-fit: cover; /* Ensures image fits without distortion and covers the area */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
-    border: 2px solid #336699; /* Optional border for styling */
+    height: 200px;
+    width: auto;
+    object-fit: cover; 
+    border-radius: 15px; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+    border: 2px solid #336699;
 }
 
-/* Offer images */
 .offer img {
-    height: 200px; /* Fixed height for the image */
-    width: auto; /* Auto-adjust width to maintain aspect ratio */
-    object-fit: cover; /* Ensures image fits without distortion and covers the area */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
-    border: 2px solid #336699; /* Optional border for styling */
+    height: 200px; 
+    width: auto; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+    border: 2px solid #336699; 
 }
 
-/* Keyframes for sliding effect */
 @keyframes slide {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-30%); /* Move the entire content out of view */
+        transform: translateX(-30%); 
     }
 }
 
@@ -85,7 +78,6 @@ a{
 
 
 
-/* Navigation Arrows */
 .arrow-left,
 .arrow-right {
     position: absolute;
@@ -108,7 +100,6 @@ a{
     right: 20px;
 }
 
-/* Make arrows and dots responsive */
 @media (max-width: 768px) {
     .offer img {
         max-height: 200px;
@@ -123,14 +114,13 @@ a{
 
 
 
-/* Navbar styling */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #6699CC; /* Medium blue */
+    background-color: #6699CC; 
     padding: 15px 30px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .nav-left {
@@ -152,44 +142,42 @@ a{
     margin-right: 20px;
 }
 
-/* Search container */
 .search-container {
     position: relative;
-    width: 400px; /* Increased width of the search container */
+    width: 400px; 
     margin-left: 20px;
 }
 
 .nav-left .search-bar {
-    width: 100%; /* Ensures the search bar takes full width of the container */
-    padding: 12px; /* Increased padding inside the search bar */
-    font-size: 1.1rem; /* Increased font size */
+    width: 100%; 
+    padding: 12px; 
+    font-size: 1.1rem; 
     border: none;
     border-radius: 5px;
-    padding-left: 40px; /* Space for the search icon */
-    height: 40px; /* Increased height for better input area */
+    padding-left: 40px; 
+    height: 40px; 
 }
 
 .nav-left .search-icon {
     position: absolute;
-    left: 10px; /* Align icon inside the search bar */
+    left: 10px; 
     top: 50%;
     transform: translateY(-50%);
-    width: 20px; /* Increased search icon size */
-    height: 20px; /* Increased search icon size */
-    pointer-events: none; /* Makes the icon non-clickable */
+    width: 20px; 
+    height: 20px; 
+    pointer-events: none; 
 }
 
-/* Center part of navbar */
+
 .nav-center {
     display: flex;
-    justify-content: flex-end; /* Shift all items to the right */
+    justify-content: flex-end;
     align-items: center;
     flex-grow: 1;
-    gap: 30px; /* Add spacing between options */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 30px; 
+    flex-wrap: wrap; 
 }
 
-/* Styling for links and icons */
 .nav-center .home,
 .nav-center .categories,
 .nav-center .cart,
@@ -199,68 +187,64 @@ a{
     font-size: 1rem;
     font-weight: 500;
     position: relative;
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth animations */
+    transition: color 0.3s ease, transform 0.3s ease; 
     cursor: pointer;
 }
 
-/* Hover effects for navigation links */
 .nav-center a:hover {
-    color: #003366; /* Change text color on hover */
-    transform: scale(1.1); /* Slightly enlarge the link on hover */
+    color: #003366; 
+    transform: scale(1.1); 
 }
 
-/* Hover underline animation */
 .nav-center a::after {
     content: '';
     position: absolute;
-    width: 0; /* Start with no underline */
+    width: 0; 
     height: 2px;
-    background-color: #003366; /* Underline color */
-    bottom: -5px; /* Slightly below the text */
+    background-color: #003366; 
+    bottom: -5px;
     left: 0;
-    transition: width 0.3s ease; /* Smooth underline animation */
+    transition: width 0.3s ease; 
 }
 
 .nav-center a:hover::after {
-    width: 100%; /* Expand underline on hover */
+    width: 100%; 
 }
 
-/* Categories dropdown with arrow */
 .nav-center .categories {
     display: flex;
     align-items: center;
-    gap: 5px; /* Space between text and arrow */
+    gap: 5px; 
 }
 
 .nav-center .categories .arrow {
     font-size: 0.8rem;
     display: inline-block;
-    transition: transform 0.3s ease; /* Smooth rotation animation */
+    transition: transform 0.3s ease; 
 }
 
 .nav-center .categories:hover .arrow {
-    transform: rotate(180deg); /* Rotate arrow to point up */
+    transform: rotate(180deg); 
 }
 
-/* Dropdown menu */
 .nav-center .dropdown-content {
-    display: none; /* Hidden by default */
+    display: none; 
     position: absolute;
-    background-color: #99CCFF; /* Light blue background */
+    background-color: #99CCFF; 
     min-width: 160px;
     z-index: 1;
-    top: 100%; /* Positions the dropdown directly below the navbar */
-    left: 0; /* Aligns it with the parent element */
-    margin-top: 5px; /* Adds slight spacing below the navbar */
+    top: 100%;
+    left: 0; 
+    margin-top: 5px; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    overflow: hidden; /* Prevents content overflow */
+    overflow: hidden;
 }
 
 .nav-center .categories:hover .dropdown-content {
-    display: block; /* Make it visible */
-    animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
-}   
+    display: block; 
+    animation: fadeIn 0.3s ease-in-out;
+}
 
 .nav-center .dropdown-content a {
     color: #003366;
@@ -268,38 +252,37 @@ a{
     text-decoration: none;
     display: block;
     font-size: 0.9rem;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .nav-center .dropdown-content a:hover {
-    background-color: #336699; /* Slightly darker blue on hover */
-    color: #CCFFFF; /* Light cyan text on hover */
+    background-color: #336699; 
+    color: #CCFFFF;
 }
 
-/* Cart and profile icon styling */
 .nav-center .cart {
     display: flex;
     align-items: center;
-    color: #CCFFFF; /* Default text color */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    color: #CCFFFF; 
+    text-decoration: none; 
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .nav-center .cart-icon {
-    width: 20px; /* Default size */
-    height: 20px; /* Default size */
-    margin-right: 5px; /* Space between icon and text */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth icon effect */
+    width: 20px;
+    height: 20px; 
+    margin-right: 5px; 
+    transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
 .nav-center .cart:hover {
-    color: #003366; /* Dark blue on hover */
-    transform: scale(1.1); /* Slightly enlarge the link on hover */
+    color: #003366;
+    transform: scale(1.1); 
 }
 
 .nav-center .cart:hover .cart-icon {
-    transform: rotate(10deg) scale(1.2); /* Rotate and enlarge icon */
-    filter: brightness(1.2); /* Slightly brighten the icon */
+    transform: rotate(10deg) scale(1.2); 
+    filter: brightness(1.2); 
 }
 
 .nav-center .account {
@@ -313,33 +296,32 @@ a{
     margin-right: 5px;
 }
 
-/* Responsive Design for Navbar */
 @media (max-width: 1024px) {
     .navbar {
         padding: 15px 20px;
     }
 
     .search-container {
-        width: 300px; /* Adjust search width */
+        width: 300px; 
     }
 
     .nav-center {
-        gap: 20px; /* Reduce space between items */
+        gap: 20px; 
     }
 
     .nav-center .categories {
-        display: block; /* Ensure categories are still shown */
+        display: block;
     }
 }
 
 @media (max-width: 768px) {
     .navbar {
-        padding: 10px 15px; /* Reduced padding for smaller screens */
+        padding: 10px 15px; 
     }
 
     .nav-left .urbankart-text {
-        font-size: 1rem; /* Smaller text for mobile */
-        margin-right: 10px; /* Adjust margin */
+        font-size: 1rem; 
+        margin-right: 10px; 
     }
 
     .nav-left .search-bar {
@@ -350,7 +332,7 @@ a{
     .nav-center {
         display: flex;
         justify-content: space-between;
-        width: 100%; /* Full width */
+        width: 100%; 
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
@@ -360,7 +342,7 @@ a{
     .nav-center .categories,
     .nav-center .cart,
     .nav-center .account {
-        font-size: 0.9rem; /* Smaller font size for mobile */
+        font-size: 0.9rem; 
     }
 
     .nav-center .cart-icon,
@@ -369,34 +351,22 @@ a{
         height: 18px;
     }
 
-    /* Add hamburger menu for small screens */
-    .hamburger-menu {
-        display: block;
-        cursor: pointer;
-        font-size: 1.5rem;
-        color: #CCFFFF;
-    }
-
-    .hamburger-menu.active + .nav-center {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+   
 }
 
 @media (max-width: 480px) {
     .navbar {
-        padding: 10px 15px; /* Further reduce padding */
+        padding: 10px 15px; 
         flex-direction: column;
         align-items: center;
     }
 
     .nav-left .logo img {
-        height: 40px; /* Smaller logo */
+        height: 40px; 
     }
 
     .search-container {
-        width: 80%; /* Wider search bar */
+        width: 80%; 
         margin: 10px 0;
     }
 
@@ -409,7 +379,7 @@ a{
     .nav-center .categories,
     .nav-center .cart,
     .nav-center .account {
-        font-size: 0.85rem; /* Smaller text */
+        font-size: 0.85rem;
     }
 
     .nav-center .cart-icon,
@@ -437,7 +407,7 @@ a{
 }
 
 .contact-column h3 {
-    color: white; /* Updated heading color */
+    color: white;
     font-size: 1.2rem;
     margin-bottom: 20px;
     border-bottom: 2px solid #99CCFF;
@@ -472,7 +442,6 @@ footer {
     padding: 15px 0;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
-    /* Ensure footer is pushed to the bottom */
     margin-top: auto;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2); 
 
@@ -490,7 +459,6 @@ footer {
 
 
 
-/* Fade-in animation for dropdown */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -504,7 +472,6 @@ footer {
 
 
 
-/* Shop by Category Section */
 .shop-by-category {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -552,7 +519,6 @@ footer {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-    /* border: 2px solid #003366; */
     box-shadow: 0px 1px 10px rgb(146, 146, 146);
 }
 
@@ -563,7 +529,6 @@ footer {
     margin-top: 5px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .categories-container {
         flex-direction: column;
@@ -575,7 +540,6 @@ footer {
 
 
 
-/* Shop by Brand Section */
 .shop-by-brand {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -593,7 +557,7 @@ footer {
     background-color: #003366;
     padding: 15px;
     border-radius: 40px;
-    border: 2px solid transparent; /* Initially no border */
+    border: 2px solid transparent; 
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
@@ -601,7 +565,7 @@ footer {
 .shop-by-brand button:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(9, 68, 146, 0.647);
-    border: 2px solid #003366; /* Border appears on hover */
+    border: 2px solid #003366;
 }
 
 .shop-by-brand button:hover::after {
@@ -683,7 +647,6 @@ footer {
     margin-top: 5px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .brands-container {
         flex-direction: column;
@@ -691,15 +654,13 @@ footer {
     }
 }
 
-/* Product Grid Styles */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensure the grid items are responsive */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 20px;
 }
 
-/* Product Card Styles */
 .product-card {
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -707,58 +668,53 @@ footer {
     padding: 15px;
     background-color: #fff;
     transition: transform 0.2s, box-shadow 0.2s;
-    height: 400px; /* Fixed height for product cards */
+    height: 400px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures that space is distributed evenly between elements */
-    box-sizing: border-box; /* To include padding and border in the element's total size */
+    justify-content: space-between; 
+    box-sizing: border-box; 
 }
 
-/* Product Card Image */
 .product-card img {
-    width: 100%; /* Image will take full width of the card */
-    height: 200px; /* Fixed height for the image */
-    object-fit: contain; /* Ensures the image is fully displayed without cutting or distortion */
+    width: 100%; 
+    height: 200px; 
+    object-fit: contain;
     border-radius: 8px;
 }
 
-/* Product Card Title */
 .product-card h3 {
     font-size: 1.2rem;
     margin: 10px 0;
 }
 
-/* Product Card Description */
 .product-card p {
     font-size: 1rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-/* Product Card Button */
 .product-card button {
-    background-color: #336699; /* Button background color */
+    background-color: #336699; 
     color: #fff;
     border: none;
-    padding: 8px 16px; /* Padding to make button compact */
-    margin: 10px auto; /* Center the button horizontally */
-    border-radius: 50px; /* Rounded edges like Google's Material Design */
+    padding: 8px 16px; 
+    margin: 10px auto; 
+    border-radius: 50px; 
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s, transform 0.2s; /* Smooth background color and transform on hover */
-    display: inline-block; /* Ensures the button doesn’t take up the full width */
-    text-transform: uppercase; /* Makes the text uppercase for a cleaner look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for the button */
-    width: 139.58px; /* Button should not stretch to fill the full width of the card */
+    transition: background-color 0.3s, transform 0.2s; 
+    display: inline-block; 
+    text-transform: uppercase; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 139.58px; 
 }
 
-/* Hover Effect for the Buttons */
+
 .product-card button:hover {
-    background-color: #003366; /* Darker shade on hover */
-    transform: translateY(-2px); /* Slight lift effect when hovered */
+    background-color: #003366; 
+    transform: translateY(-2px); 
 }
 
-/* Hover Effect on Product Card */
 .product-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -767,50 +723,25 @@ footer {
 
 
 
-/* Particle container */
-.particles-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Make sure the container takes the full height of the screen */
-    overflow: hidden;
-}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    color: #003366;
+    
 
-/* Individual particles */
-.particle {
-    position: absolute;
-    bottom: 0; /* Start at the bottom */
-    width: 10px;
-    height: 10px;
-    background-color: #FFFFFF; /* Color of the particles */
-    border-radius: 50%;
-    animation: moveParticles 3s ease-in-out infinite, fadeIn 3s ease-out infinite;
+        text-shadow: 0px 0px 3px rgba(178, 200, 228, 0.6); 
 }
+.main-section h1{
+    text-align: center;
+    margin-top: 10px;
+    color: #003366;
+    
 
-/* Keyframe for particle movement */
-@keyframes moveParticles {
-    0% {
-        transform: translateY(0) scale(1); /* Start at the bottom */
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100vh) scale(1.5); /* Move up off the screen */
-        opacity: 0; /* Fade out as they go up */
-    }
+        text-shadow: 0px 0px 3px rgba(178, 200, 228, 0.6); 
+      
+      
+      
 }
-
-/* Keyframe for fade-in effect */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 
 
 
