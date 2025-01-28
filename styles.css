@@ -811,7 +811,14 @@ footer {
     }
 }
 
+h1{
+    text-align: center;
+    margin-top: 10px;
+    color: #003366;
+    
 
+        text-shadow: 0px 0px 3px rgba(178, 200, 228, 0.6); 
+}
 .main-section h1{
     text-align: center;
     margin-top: 10px;
