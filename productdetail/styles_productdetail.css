@@ -229,17 +229,143 @@ footer {
     box-shadow: 0 -4px 20px -2px rgba(0, 0, 0, 0.2); 
 }
 
+@media (max-width: 1024px) {
+    .product-detail-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .product-images {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+        padding-left: 0;
+    }
+
+    .product-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .product-price span {
+        font-size: 1.3rem;
+    }
+
+    .product-rating span {
+        font-size: 1.1rem;
+    }
+
+    .pincode-section input {
+        width: 150px;
+    }
+
+    .quantity-section input {
+        width: 50px;
+    }
+
+    .actions button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+
+    .related-product img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .related-product-list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-detail-container {
+        padding: 15px;
+    }
+
+    .product-info h1 {
+        font-size: 1.3rem;
+    }
+
+    .product-price span {
+        font-size: 1.2rem;
+    }
+
+    .pincode-section input {
+        width: 100px;
+    }
+
+    .quantity-section input {
+        width: 45px;
+    }
+
+    .actions button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .related-product img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-detail-container {
+        padding: 10px;
+    }
+
+    .product-info h1 {
+        font-size: 1.2rem;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+    }
+
+    .product-price span {
+        font-size: 1.1rem;
+    }
+
+    .pincode-section input {
+        width: 80px;
+    }
+
+    .quantity-section input {
+        width: 40px;
+    }
+
+    .actions button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .related-product img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .related-product-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #6699CC; 
     padding: 15px 30px;
+    flex-wrap: wrap; 
 }
 
 .nav-left {
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .nav-left .logo img {
@@ -258,6 +384,7 @@ footer {
 .search-container {
     position: relative;
     width: 400px; 
+    margin-left: 20px;
 }
 
 .nav-left .search-bar {
@@ -283,10 +410,11 @@ footer {
 
 .nav-center {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
     flex-grow: 1;
     gap: 30px; 
+    flex-wrap: wrap; 
 }
 
 .nav-center .home,
@@ -304,23 +432,22 @@ footer {
 
 .nav-center a:hover {
     color: #003366; 
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
-
 
 .nav-center a::after {
     content: '';
     position: absolute;
-    width: 0;
+    width: 0; 
     height: 2px;
     background-color: #003366; 
-    bottom: -5px; 
+    bottom: -5px;
     left: 0;
     transition: width 0.3s ease; 
 }
 
 .nav-center a:hover::after {
-    width: 100%;
+    width: 100%; 
 }
 
 .nav-center .categories {
@@ -332,7 +459,7 @@ footer {
 .nav-center .categories .arrow {
     font-size: 0.8rem;
     display: inline-block;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; 
 }
 
 .nav-center .categories:hover .arrow {
@@ -345,18 +472,18 @@ footer {
     background-color: #99CCFF; 
     min-width: 160px;
     z-index: 1;
-    top: 100%; 
+    top: 100%;
     left: 0; 
     margin-top: 5px; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .nav-center .categories:hover .dropdown-content {
     display: block; 
-    animation: fadeIn 0.3s ease-in-out; 
-}   
+    animation: fadeIn 0.3s ease-in-out;
+}
 
 .nav-center .dropdown-content a {
     color: #003366;
@@ -369,7 +496,7 @@ footer {
 
 .nav-center .dropdown-content a:hover {
     background-color: #336699; 
-    color: #CCFFFF; 
+    color: #CCFFFF;
 }
 
 .nav-center .cart {
@@ -381,14 +508,14 @@ footer {
 }
 
 .nav-center .cart-icon {
-    width: 20px; 
+    width: 20px;
     height: 20px; 
-    margin-right: 5px;
+    margin-right: 5px; 
     transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
 .nav-center .cart:hover {
-    color: #003366; 
+    color: #003366;
     transform: scale(1.1); 
 }
 
@@ -408,6 +535,98 @@ footer {
     margin-right: 5px;
 }
 
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .search-container {
+        width: 300px; 
+    }
+
+    .nav-center {
+        gap: 20px; 
+    }
+
+    .nav-center .categories {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px; 
+    }
+
+    .nav-left .urbankart-text {
+        font-size: 1rem; 
+        margin-right: 10px; 
+    }
+
+    .nav-left .search-bar {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .nav-center {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; 
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-center .home,
+    .nav-center .categories,
+    .nav-center .cart,
+    .nav-center .account {
+        font-size: 0.9rem; 
+    }
+
+    .nav-center .cart-icon,
+    .nav-center .profile-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+   
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left .logo img {
+        height: 40px; 
+    }
+
+    .search-container {
+        width: 80%; 
+        margin: 10px 0;
+    }
+
+    .nav-center {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-center .home,
+    .nav-center .categories,
+    .nav-center .cart,
+    .nav-center .account {
+        font-size: 0.85rem;
+    }
+
+    .nav-center .cart-icon,
+    .nav-center .profile-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
 
 
 
