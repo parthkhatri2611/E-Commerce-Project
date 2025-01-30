@@ -655,7 +655,7 @@ footer {
 }
 
 .product-grid {
-    display: grid;
+    display:flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 20px;
@@ -671,14 +671,14 @@ footer {
     height: 400px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content:space-between; 
     box-sizing: border-box; 
 }
 
 .product-card img {
     width: 100%; 
     height: 200px; 
-    object-fit: contain;
+    object-fit:contain;
     border-radius: 8px;
 }
 
@@ -692,7 +692,16 @@ footer {
     color: #333;
     margin-bottom: 10px;
 }
+.product-card button:hover {
+    background-color: #003366; 
+    transform: translateY(-2px); 
+    transform: scale(1.1);
+}
 
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .product-card button {
     background-color: #336699; 
     color: #fff;
@@ -710,15 +719,7 @@ footer {
 }
 
 
-.product-card button:hover {
-    background-color: #003366; 
-    transform: translateY(-2px); 
-}
 
-.product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 
 
